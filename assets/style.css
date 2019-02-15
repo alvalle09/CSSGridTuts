@@ -34,20 +34,27 @@ html {
 }
 
 body {
-  background-image: url("./images/topography.svg"),
-    linear-gradient(110deg, #f93d66, #6d47d9);
-  background-size: 340px, auto;
+  /*background-image: url("./images/topography.svg"),
+     linear-gradient(110deg, #f93d66, #6d47d9);*/
+  background: -webkit-linear-gradient(to right, #5D26C1, #a17fe0, #59C173);  /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to right, #5D26C1, #a17fe0, #59C173); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  
+   
+  background-size: auto;
   min-height: calc(100vh - 100px);
   margin: 50px;
   /* background: white; */
-  background-attachment: fixed;
+  /*background-attachment: fixed;*/
   letter-spacing: -1px;
 }
 
 .container {
   display : grid;
-  grid-template-columns: 100px 200px;
   grid-gap: 20px;
+  grid-template-columns: 200px 200px;
+  grid-template-rows: 50px 50px;
+  grid-auto-rows:100px;
+  grid-auto-columns: 100px;
 }
 
 
