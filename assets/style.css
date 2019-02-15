@@ -6,7 +6,7 @@
   Let's go through the important bits real quick
 */
 :root {
-  --yellow: #ffc600;
+  --yellow: #a3d660;
   --black: #272727;
 }
 
@@ -50,6 +50,8 @@ body {
 .container {
   display : grid;
   grid-gap: 20px;
+  border: 10px solid var(--yellow);
+  grid-template-columns: 200px 200px;
 
 }
 
