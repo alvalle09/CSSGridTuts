@@ -52,10 +52,7 @@ body {
   grid-gap: 20px;
   border: 10px solid var(--yellow);   
   height: 600px;
-
-  grid-template-columns: auto 1fr;
 }
-  
 
 
 h1,
