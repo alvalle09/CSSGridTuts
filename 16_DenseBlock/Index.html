@@ -87,7 +87,7 @@
       display: grid;
       grid-gap: 20px;
       grid-template-columns: repeat(10, 1fr);
-      /*grid-auto-flow: dense; */
+      grid-auto-flow: dense; 
     }
 
     .item:nth-child(6n) {
@@ -102,6 +102,11 @@
 
     .item:nth-child(9n) {
       grid-row: span 2;
+      background: orange;
+    }
+
+    .item18 {
+      background: greenyellow !important; /*use !important to override 9nth child*/
     }
 
 
