@@ -39,7 +39,7 @@ body {
   /*background: -webkit-linear-gradient(to right, #5D26C1, #a17fe0, #59C173); */ /* Chrome 10-25, Safari 5.1-6 */
   /*background: linear-gradient(to right, #5D26C1, #a17fe0, #59C173); */ /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
 
-  background-image: url("./images/Liquid-Cheese.svg"), linear-gradient(to left, #A7BFE8, #6190E8);
+  background-image: url("./images/Protruding-Squares.svg"), linear-gradient(to left, #A7BFE8, #6190E8);
   /* awesome background svg from SVGBackgrounds.com */
 
   /*background: -webkit-linear-gradient(to left, #A7BFE8, #6190E8); */  /* Chrome 10-25, Safari 5.1-6 */

@@ -95,22 +95,31 @@
 
   </div>
 
-
   <style>
 
    .albums {
      display: grid;
-     grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
-     grid-gap: 20px;
-    
+     grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+     grid-gap: 20px;    
    }
 
    .album {
      background: rgba(255, 255, 255, 0.2);
      box-shadow: 0 0 5px rgb(0, 0, 0, 0.3);
      padding: 20px;
+     /* nested grid */
+     display: grid;
+     grid-template-columns: 200px 1fr;
+     
+     grid-gap: 10px;
+     align-items: center;
+     color: white;
+     font-weight: 100;
    }
 
+   .album__artwork {
+     width: 100%;
+   }
 
   </style>
 </body>
