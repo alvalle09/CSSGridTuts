@@ -17,12 +17,12 @@ function generateHTML([h, v]) {
     `;
 }
 
-const digits = Array.from({ length: 50 }, () => 
-    [randomNumber(4), randomNumber(4)];
+const digits = Array.from({ length: 50}, () => 
+    [randomNumber(4), randomNumber(4)]);
 
 console.log(digits);
 
 function randomNumber(limit) {
-    return Math.floor(Math.random() * limit) + 1;
+    return Math.floor(Math.random() * limit) + 1
 }
 
