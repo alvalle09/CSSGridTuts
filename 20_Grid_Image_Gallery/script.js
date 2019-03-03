@@ -26,3 +26,10 @@ function randomNumber(limit) {
     return Math.floor(Math.random() * limit) + 1
 }
 
+const html = digits.map(generateHTML).join('');
+//console.log(html);
+
+gallery.innerHTML = html;
+
+
+
