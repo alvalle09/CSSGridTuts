@@ -27,10 +27,20 @@ function randomNumber(limit) {
     return Math.floor(Math.random() * limit) + 1
 }
 
-//
+// What happens when button on image is clicked 
 function handleClick(e) {
-    console.log(e.currentTarget);
+    console.log(e.currentTarget); 
+    const src = e.currentTarget.querySelector('img').src;
+    console.log(src);
+    overlayImage.src = src;
+    overlay.classList.add('open');
 }
+
+
+function close() {
+    overlay.classList.remove('open');
+}
+
 
 const html = digits.map(generateHTML).join('');
 //console.log(html);
@@ -40,6 +50,10 @@ gallery.innerHTML = html;
 const items = document.querySelectorAll('.item');
 
 items.forEach(item => item.addEventListener('click', handleClick));
+
+overlayClose.addEventListener('click', close);
+
+
 
 
 
