@@ -70,6 +70,32 @@
       grid-row: 1 / -1;
       width: 100%; 
       height: 100%;
+      object-fit: cover;
+    }
+
+    .item__overlay {
+      background:#ffc60032;;
+      grid-column: 1 / -1;
+      grid-row: 1 / -1;
+      position: relative;
+      display: grid;
+      justify-items: center;
+      align-items: center;
+      transition: 0.3s;
+      transform: translateY(100%)
+    }
+
+    .item__overlay button {
+      background: none;
+      border: 2px solid white;
+      color: white;
+      text-transform: uppercase;
+      background: rgba(0, 0, 0, 0.7);
+      padding: 5px;
+    }
+
+    .item:hover .item__overlay {
+      transform: translate(0);    /* set overlay at center on hover */
     }
 
     .item.v2 {
