@@ -18,7 +18,8 @@ function generateHTML([h, v]) {
 }
 
 const digits = Array.from({ length: 50}, () => 
-    [randomNumber(4), randomNumber(4)]);
+    [randomNumber(4), randomNumber(4)]).concat([ [1,1], [1,1], [1,1],
+    [1,1], [1,1], [1,1], [1,1], [1,1]]);
 
 console.log(digits);                    
 
