@@ -19,12 +19,17 @@
   </div>
 
   <style>
-    .stacked {}
-
+    .stacked {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-around; /* try space-between too */
+    }
+    
     .stacked>* {
       width: 30%;
       margin-bottom: 20px;
     }
+    
   </style>
 </body>
 
