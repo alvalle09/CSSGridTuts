@@ -40,7 +40,8 @@ h6 {
 
 .code {
   display: grid;
-  grid-template-columns: repeat(3, fr);
+  grid-template-columns: repeat(3, 1fr);
+  
 }
 
 .pen {
@@ -49,4 +50,9 @@ h6 {
   grid-auto-flow: column;
   align-items: center;
   grid-gap: 10px;
+}
+
+.preview {
+  display: grid;
+
 }
