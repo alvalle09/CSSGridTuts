@@ -1,3 +1,8 @@
+
+:root {
+  --grey: #343436;
+}
+
 html {
   box-sizing: border-box;
   font-family: "Lato", "Lucida Grande", "Lucida Sans Unicode", Tahoma,
@@ -50,9 +55,22 @@ h6 {
   grid-auto-flow: column;
   align-items: center;
   grid-gap: 10px;
+  background: black;
+  border-bottom: 5px solid var(--grey);
+  color: white;
+  padding: 10px;
 }
 
 .preview {
   display: grid;
 
+}
+
+.button {
+  background: var(--grey);
+  border: 0;
+  color: white;
+  padding: 10px;
+  border-radius: 5px;
+  font-size: 15px;
 }
