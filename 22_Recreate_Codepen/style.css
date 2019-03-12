@@ -36,7 +36,7 @@ h6 {
 .codepen {
   display: grid;
   grid-template-rows: auto 1fr 1fr auto;
-  height: 100vh;;
+  height: 100vh; /* without height .codepen aligns incorrectly at bottom */
 }
 
 .codepen >* {
