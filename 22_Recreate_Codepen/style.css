@@ -1,6 +1,8 @@
 
+/* css variables for reusing common settings */
 :root {
   --grey: #343436;
+  --blue-border: blue;
 }
 
 html {
@@ -35,18 +37,57 @@ h6 {
 
 .codepen {
   display: grid;
+   
   grid-template-rows: auto 1fr 1fr auto;
   height: 100vh; /* without height, .codepen aligns incorrectly at bottom */
+  color: white;
 }
 
 .codepen >* {      /* for every direct descendant of codepen  */
   border: 1px solid black;
+  
 }
 
 .code {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
-  
+  background: #1b2b34;
+}
+
+.editor {
+  display: grid;
+  grid-template-rows: auto 1fr;
+  border-style: solid ;
+  border-color: grey;
+  border-width: 0.5px;
+}
+
+.editor__code {
+  display: grid;
+  grid-template-columns: auto 1fr;
+}
+
+.editor__header {
+  display: grid;
+  grid-template-columns: auto 1fr auto;
+  align-items: center;
+  padding: 5px;
+  grid-gap: 5px;
+  background: rgba(211, 194, 194, 0.1);
+}
+
+.editor__number {
+  display: block;
+  padding: 0 10PX;
+}
+
+.editor__input {
+  resize: none;
+  background: none;
+  color: cornsilk;
+  border: 0;
+  font-size: 16px;
+  line-height: 19px;
 }
 
 .pen {
@@ -73,4 +114,30 @@ h6 {
   padding: 10px;
   border-radius: 5px;
   font-size: 15px;
+  position: relative;
 }
+
+.button--small {
+  font-size: 12px;
+  padding: 4px;
+}
+
+.button--dirty::before {
+  background: yellow;
+  display: block;
+  content: '';
+  height: 2px;
+  width: calc(100% - 6px);
+  position: absolute;
+  left: 3px;
+  top: 3px;
+}
+
+.settings {
+  padding: 5px;
+  background: black;
+  border-top: 1px solid grey;
+}
+
+
+
