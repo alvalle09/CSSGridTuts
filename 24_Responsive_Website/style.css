@@ -14,6 +14,7 @@ img {
 
 .top {
   display: grid;
+  grid-gap: 20px;
   grid-template-areas: 
     "hero hero cta1"
     "hero hero cta2"
@@ -26,12 +27,19 @@ img {
   background-size: cover;
   background-position: bottom right;
   padding: 50px;
-  display: grid;
-  justify-content: start;
-  align-content: center;
+  display: flex;
+  flex-direction: column;  /* flow top to bottom */
+  align-items: start;
+  justify-content: center;
 }
 
 .hero > * {
+  background: var(--yellow);
+  padding: 5px;
+}
+
+/* call to action items */
+.cta {
   background: var(--yellow);
 }
 
