@@ -6,7 +6,7 @@
   Let's go through the important bits real quick
 */
 :root {
-  --yellow: #d8d86e;
+  --yellow: #cbd62ae0;
   --grey: #c9bcbc;
   --black: #3a2525;
 }
@@ -35,18 +35,16 @@ html {
 
 body {
  
-  /*   linear-gradient(110deg, #f93d66, #6d47d9);*/
+  /* linear-gradient(110deg, #f93d66, #6d47d9); */
   /*background: -webkit-linear-gradient(to right, #5D26C1, #a17fe0, #59C173); */ /* Chrome 10-25, Safari 5.1-6 */
   /*background: linear-gradient(to right, #5D26C1, #a17fe0, #59C173); */ /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
 
-  background-image: url("./images/Liquid-Cheese.svg"), linear-gradient(to left, #A7BFE8, #6190E8);
+  background-image: linear-gradient(to right, rgb(204, 138, 218), rgba(165, 50, 159, 0.993));
   /* awesome background svg from SVGBackgrounds.com */
 
   /*background: -webkit-linear-gradient(to left, #A7BFE8, #6190E8); */  /* Chrome 10-25, Safari 5.1-6 */
   /*background: linear-gradient(to left, #A7BFE8, #6190E8); */ /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
   
-  
-     
   background-size: auto;
   min-height: calc(100vh - 100px);
   margin: 50px;
