@@ -12,6 +12,13 @@ img {
   max-width: 100%;
 }
 
+/* .wrapper */ 
+.wrapper {
+  display: grid;
+  grid-gap: 20px;
+}
+
+
 .top {
   display: grid;
   grid-gap: 20px;
@@ -112,9 +119,11 @@ img {
 }
 
 .about {
-  background: white;
+  background: rgba(0, 0, 0,0.2);
   padding: 50px;
   display: grid;
   grid-template-columns: 400px 1fr;
   align-items: center;
 }
+
+
