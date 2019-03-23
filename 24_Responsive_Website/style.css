@@ -45,7 +45,7 @@ img {
   padding: 5px;
 }
 
-/* call to action items */
+/* call to action  (cta) items */
 .cta {
   background: var(--yellow);
   display: grid;
@@ -134,11 +134,15 @@ img {
 
 .gallery h2 {
   grid-column: 1 / -1;
+  display: grid;
 }
 
 .gallery img {
   width: 100%;
 }
+
+
+
 
 
 
