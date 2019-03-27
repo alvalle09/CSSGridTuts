@@ -156,6 +156,24 @@ img {
   --direction: right;
 }
 
+@media (max-width: 1000px) {
+  .menu {
+    order: -1;
+  }
+
+  [aria-controls="menu-list"] {
+    display: block;  /* show button here */
+    margin-bottom: 10px;
+  }
+
+  .nenu ul {
+    max-height: 0;
+    transform: rotate(90deg);
+    transition: all 0.5s;
+  }
+  
+}
+
 @media (max-width: 700px) {
   .top {
     grid-template-areas: 
