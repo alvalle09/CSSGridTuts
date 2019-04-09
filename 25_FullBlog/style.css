@@ -29,3 +29,16 @@
     font-weight: 100;
     margin: 0;
     }
+
+    /* by using grid, all sub elements become grid items */
+    .post {
+        display: grid;
+        max-width: 1000px;
+        margin: 200px auto;
+        grid-gap: 10px 20px;
+        grid-template-columns: 3fr 12fr 5fr;
+    }
+
+
+
+    
