@@ -1,6 +1,6 @@
 
     :root {
-    --yellow: #886c08;
+    --yellow: #d8b22a;
     }
 
     html {
@@ -39,6 +39,45 @@
         grid-template-columns: 3fr 12fr 5fr;
     }
 
+    /* this grabs every element under article, and puts them in middle column of grid*/
+    .post > * {
+        /* grid-column: 2 / span 1; */
+        grid-column: 2 / -2 ; /* better way in case we add more columns later */
+    }
 
+    .post > figure {
+        margin: 0;
+        grid-column: 1 / -1;
+    }
 
-    
+    figcaption {
+        font-size: 10px;
+    }
+
+    .post > blockquote {
+        grid-column: 1 / -1;
+        font-size: 60px;
+        font-style: italic;
+        text-align: center;
+        margin: 0;
+
+    }
+
+    .tip {
+        background: #FAFAFA;
+        padding: 10px;
+        grid-row: span 5;
+        align-self: start;
+    }
+
+    .tip-left {
+        grid-column: 1 / span 1;
+        text-align: right;
+        border-right: 2px solid var(--yellow);
+    }
+
+    .tip-right {
+        grid-column: span 1 / -1;
+        border-left: 2px solid var(--yellow);
+    }
+
